@@ -1,0 +1,69 @@
+<!-- Code Written by a human -->
+
+<!-- Web page stuff goes here / most importantly the structure of my content -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Class 01: HTMl / CSS /JS basics</title>
+  <style>
+    /* CSS goes here , nothing to display*/
+    header {
+      /* css statements */
+      background-color: blue;
+      color: white;
+    }
+    .list {
+      color: red;
+    }
+    #intro {
+      color: yellow;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- All the things that we see in the browser -->
+  <header id="intro">
+    <h1>HTML CSS and JS!</h1>
+  </header>
+  <main>
+    <p>Words</p>
+    <!-- unorder list, bulleted lists of things -->
+    <ul>
+      <li class="list">Item One</li>
+      <li class="list">Item Two</li>
+      <li class="list">Item Three</li>
+    </ul>
+    <ol>
+      <li class="list">Item One</li>
+      <li class="list">Item Two</li>
+      <li class="list">Item Three</li>
+    </ol>
+    <!-- All navigation elements go here. -->
+    <nav>
+      <!-- Anchor Tag: links to other HTML files -->
+      <a href="https://google.com">Google</a>
+    </nav>
+    <!-- Generally anything -->
+    <div></div>
+  </main>
+  <footer>
+    <p>&copy; Code Fellows 201d103</p>
+  </footer>
+  <script>
+    // variables - storage container for values / data
+    let greeting = 'Hey there!'; // String (natural language characters)
+
+    // prompt - function built into the browser, let's us ask the user for input.
+    let name = prompt('What is your name?');
+
+    // alerts - built in function for giving feedback to the user.
+    alert(greeting + name);
+    console.log('Only developers will see this' + name);
+    let age = 33;
+    console.log(`Only developers will see this ${age}`);
+  </script>
+</body>
+</html>
