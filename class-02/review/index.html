@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Class 01 Lab</title>
+  <style>
+    h1 {
+      color: white;
+      background-color: burlywood;
+    }
+
+    .one {
+      color: beige;
+      background-color: goldenrod;
+    }
+
+    .two {
+      color: black;
+      background-color: cadetblue;
+    }
+
+    .three {
+      color: darkgoldenrod;
+      background-color: aliceblue;
+    }
+
+    .four {
+      color: darkgrey;
+      background-color: lavenderblush;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    function askQuestion(promptText, output) {
+      let response = prompt(promptText);
+      console.log(promptText, output)
+      if (response !== null) {
+        alert(output);
+      }
+    }
+
+    askQuestion('If you could choose your name, what would it be?', 'That\'s an awesome name!')
+    askQuestion('What is your favorite scary move?', 'Nice! I love the Scream movies obviously!')
+    askQuestion('If you could have a life time supply of anything, what would it be?', 'Wow! Would have never thought of that for myself.')
+    askQuestion('Pineapple on pizza, yes or no?', 'The only right answer is yes.')
+  </script>
+  <header>
+    <h1>Class 1 Lab</h1>
+  </header>
+  <main>
+    <p class="one">If you could choose your name, what would it be?</p>
+    <p class="two">What is your favorite scary movie?</p>
+    <p class="three">If you could have a life supply of anything, what would it be?</p>
+    <p class="four">Pineapple on pizza, yes or no?</p>
+
+  </main>
+  <footer></footer>
+</body>
+
+</html>
