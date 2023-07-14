@@ -1,0 +1,32 @@
+h1 {
+  font-size: 50px;
+  margin: 8px;
+  padding: 16px;
+  font-family: 'VT323', monospace;
+  color: #ffffff;
+  background-color: rgb(37, 145, 241);
+}
+
+img {
+  /* height: 100px; */
+  width: 100px;
+}
+
+div {
+  display: inline-block;
+  width: 200px;
+}
+
+.image-container {
+  border: thin solid black;
+}
+
+.image-container p {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+  float: right;
+  width: 75px;
+  position: relative;
+  right: 10px;
+  top: 20px;
+}
