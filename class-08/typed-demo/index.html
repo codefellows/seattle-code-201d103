@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inheritance and CSS Layouts!</title>
+  <style>
+    h2 {
+      display: inline-block;
+      height: 100px;
+      width: 200px;
+    }
+    /* p {
+      display: inline;
+    } */
+    .inline {
+      display: inline;
+      height: 1000px;
+      color: blue;
+    }
+    .flex {
+      display: flex;
+      flex-direction: column;
+      height: 800px;
+      /* justify content - moves content along the primary axis*/
+      justify-content: space-around;
+      /* align items - moves content along the secondary axis */
+      align-items: center;
+      width: 300px;
+      margin: 0 auto;
+    }
+    .flex-child {
+      width: 150px;
+      background-color: yellow;
+    }
+    .row {
+      display: flex;
+      flex-direction: row;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pokemon Cards!</h1>
+  </header>
+  <main>
+    <section>
+      <h2>I am a title</h2>
+      <p>I am some text</p>
+      <div>
+        Here is some text
+        <p class="inline">I am also some text but I am nested</p>
+      </div>
+    </section>
+    <section class="row">
+      <section class="flex">
+        <div class="flex-child">
+          <p>Paragraph 1</p>
+          <p>Also paragraph 1</p>
+        </div>
+        <div class="flex-child">
+          <p>Paragraph 2</p>
+        </div>
+        <div class="flex-child">
+          <p>Paragraph 3</p>
+        </div>
+      </section>
+      <section class="flex">
+        <div class="flex-child">
+          <p>Paragraph 1</p>
+          <p>Also paragraph 1</p>
+        </div>
+        <div class="flex-child">
+          <p>Paragraph 2</p>
+        </div>
+        <div class="flex-child">
+          <p>Paragraph 3</p>
+        </div>
+      </section>
+      <section class="flex">
+        <div class="flex-child">
+          <p>Paragraph 1</p>
+          <p>Also paragraph 1</p>
+        </div>
+        <div class="flex-child">
+          <p>Paragraph 2</p>
+        </div>
+        <div class="flex-child">
+          <p>Paragraph 3</p>
+        </div>
+      </section>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
