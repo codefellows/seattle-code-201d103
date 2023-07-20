@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Pokedex</title>
+</head>
+<body>
+  <header id="header" style="background-color: red;">
+    <h1 id="title">My Pokedex</h1>
+  </header>
+  <main>
+    <!-- New HTML element -->
+    <form id="pokemon-form">
+      <fieldset>
+        <legend>Create A Pokemon</legend>
+        <div class="pokemon-input">
+          <label for="pokemon-name">Pokemon Name</label>
+          <input id="pokemon-name" type="text" name="pokemonName"
+          placeholder="Pikachu" required>
+        </div>
+        <div class="pokemon-input">
+          <label for="pokemon-type">Pokemon Type</label>
+          <input id="pokemon-type" type="text" name="pokemonType" placeholder="Electric" required>
+        </div>
+        <!-- <div class="pokemon-input">
+          <label for="pokemon-health">Health Points</label>
+          <input id="pokemon-health" type="number" name="pokemonHealth" placeholder="100">
+        </div> -->
+        <div class="pokemon-input">
+          <label for="pokemon-foil">Is Your Pokemon Shiny?</label>
+          <select id="pokemon-foil" name="isFoil" required>
+            <option value="true">Yes</option>
+            <option value="false">No</option>
+          </select>
+        </div>
+        <button type="submit">Create Pokemon</button>
+      </fieldset>
+    </form>
+    <section>
+      <table id="pokedex">
+        <thead>
+          <tr>
+            <th>
+              Pokemon Name
+            </th>
+            <th>
+              Pokemon Type
+            </th>
+            <th>
+              Shiny?
+            </th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+
+        </tbody>
+        <tfoot id="table-footer">
+
+        </tfoot>
+      </ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>

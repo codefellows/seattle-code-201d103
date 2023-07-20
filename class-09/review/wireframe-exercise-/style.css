@@ -1,0 +1,123 @@
+
+.nav-d{
+  display: inline;
+  text-align: center;
+  font-size: 10px;
+  background-color: grey;
+  color: white;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-top: 70px;
+  margin-bottom:70px;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.nav-logo{
+  background-color: grey;
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+
+.header-d{
+  display: flex;
+  background-color: darkgrey;
+  padding: 50px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: 70px;
+  margin-right: 70px;
+
+
+}
+
+.main-main{
+  border: 2px solid green;
+}
+.mid-d{
+  display: flex;
+  border: 2px solid blueviolet;
+  padding: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.top-m{
+  display: flex;
+  border: 2px solid blue;
+  padding: 20px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.mid-m{
+  border: 2px solid red;
+  margin: 10px;
+}
+
+.bot-d{
+  display: flex;
+  border: 2px solid blueviolet;
+  padding: 20px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.bot-m{
+  /* border: 2px solid orange; */
+  margin: 10px;
+}
+
+.bot-m-r{
+width: 480px;
+height: 400px;
+}
+.scroll{
+  overflow: scroll;
+  width: 420px;
+  height: 250px;
+}
+
+.c-t-act{
+padding: 20px;
+/* margin: 10px; */
+}
+
+
+
+.foot-d{
+  display: flex;
+  background-color: darkgrey;
+  border: 2px solid green;
+  padding: 50px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  margin-left: 70px;
+  margin-right: 70px;
+  justify-content: center;
+  align-items: center;
+}
