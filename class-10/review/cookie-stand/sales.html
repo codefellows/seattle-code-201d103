@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Data</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Hourly Sales Data</h1>
+    <a href="index.html" class="sales-link">Home</a>
+  </header>
+</br>
+<table id="sales-table">
+  <thead id="thead">
+    
+  </thead>
+
+  <tbody id="tbody">
+
+  </tbody>
+
+  <!-- <tfoot id="Tfoot">
+
+  </tfoot> -->
+
+</table>
+
+<form id="store-form">
+  <fieldset>
+    <legend>Add Store</legend>
+
+    <div>
+      <label for="storeName">Store Location</label>
+      <input id="store-name" type="text" name="storeName" placeholder="Chicago">
+    </div>
+
+    <div>
+      <label for="storeMinCust">Minimum Customers</label>
+      <input id="min-cust" type="text" name="storeMinCust" placeholder="6">
+    </div>
+
+    <div>
+      <label for="storeMaxCust">Maximum Custormers</label>
+      <input id="max-cust" type="text" name="storeMaxCust" placeholder="40">
+    </div>
+
+    <div>
+      <label for="storeAvgCookies">Average Cookies Per Hour</label>
+      <input id="avg-cookies" type="text" name="storeAvgCookies" placeholder="2.6">
+    </div>
+
+    <button type="submit">Create Store</button>
+
+  </fieldset>
+</form>
+  
+<script src="app.js"></script>
+</body>
+</html>

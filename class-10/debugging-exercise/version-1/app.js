@@ -1,8 +1,10 @@
 'use strict';
 
+console.log('App loaded');
 //global Variables
 CookieStand.totalHourArray = [];
 CookieStand.storeForm = document.getElementById('storeForm');
+console.log(CookieStand.storeForm);
 CookieStand.standsTable = document.getElementById('standsTable');
 //all are props of CoookieS
 
@@ -35,7 +37,7 @@ CookieStand.prototype.randRate = function(){
     this.cookieSoldArray.push(Math.floor(this.aveCookies * (Math.random() * (this.maxCustomers - this.minCustomers + 1) + this.minCustomers)));
   };
   this.cookieSoldTotal = 0;
-  for(i in this.cookieSoldArray){
+  for(let i in this.cookieSoldArray){
     this.cookieSoldTotal += this.cookieSoldArray[i];
   }
   this.cookieSoldArray.push(this.cookieSoldTotal);
@@ -45,6 +47,8 @@ CookieStand.prototype.createHourlyRateTable = function(){
   this.trEl = document.createElement('tr');
   CookieStand.standsTable.appendChild(this.trEl);
   let locCSArray = this.cookieSoldArray.slice(0);
+  locCSArray.unshift(this.name);
+  console.log(locCSArray);
   // this.cookieSoldArray.unshift(this.name);
 
   for(let i = 0; i < locCSArray.length; i++){
