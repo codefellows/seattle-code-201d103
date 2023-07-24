@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media + CSS Grid</title>
+  <style>
+    video {
+      height: 100px;
+    }
+    #grid-layout {
+      display: grid;
+      /* more numbers means more rows */
+      grid-template-rows: 100px 100px 100px;
+      /* more numbers means more columns */
+      grid-template-columns: 100px 100px 100px 100px;
+      grid-column-gap: 10px;
+      grid-row-gap: 20px;
+    }
+    div div {
+      border: thin solid red;
+      /* margin: 15px; */
+    }
+    #number-one {
+      /* Sets this element into row 3 of our grid */
+      grid-row: 3;
+      /* Tells our element to go from column1 and extend all the way to column 5 */
+      grid-column-start: 1;
+      grid-column-end: 5;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML Media</h1>
+    <nav>
+      <a href="goats.html">Goat Survey</a>
+    </nav>
+  </header>
+  <main>
+    <div>
+      <audio id="audio-source" src="assets/audio/levees.m4a"></audio>
+      <button id="play-btn">Play</button>
+      <!-- <button id="pause-btn">Pause</button> -->
+    </div>
+    <video id="video-source" controls muted>
+      <source src="assets/video/demi.mov">
+    </video>
+    <div id="grid-layout">
+      <div id="number-one">1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+    </div>
+  </main>
+  <script>
+    let audioElement = document.getElementById('audio-source');
+    let videoElement = document.getElementById('video-source');
+    videoElement.currentTime = 25;
+    videoElement.loop = true;
+
+    document.getElementById('play-btn').addEventListener('click', function(event) {
+      console.log(event.target);
+      if (audioElement.paused) {
+        event.target.textContent = 'Pause';
+        audioElement.play();
+      } else {
+        event.target.textContent = 'Play';
+        audioElement.pause();
+      }
+    });
+    // document.getElementById('pause-btn').addEventListener('click', function() {
+    // });
+  </script>
+</body>
+</html>
