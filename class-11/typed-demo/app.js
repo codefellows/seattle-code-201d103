@@ -56,4 +56,4 @@ function handleGoatClicks(event) {
 }
 
 goatContainer.addEventListener('click', handleGoatClicks);
-// goatContainer.removeEventListener('click', handle)
+// goatContainer.removeEventListener('click', handleGoatClicks)
