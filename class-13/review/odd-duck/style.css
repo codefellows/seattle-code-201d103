@@ -1,0 +1,26 @@
+header h1 {
+  display: flex;
+  font-size: 75px;
+  justify-content: center;
+  margin: 15px;
+}
+
+div h2 {
+  display: flex;
+  font-size: 25px;
+  justify-content: center;
+  margin: 15px;
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.img {
+  height: 250px;
+  width: 250px;
+  border: thin solid black;
+  margin: 10px;
+}
