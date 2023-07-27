@@ -1,0 +1,37 @@
+#animate-me {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border: thin solid blue;
+  transition: 0.5s;
+}
+
+#animate-me:hover {
+  /* margin-left: 500px; */
+  /* transition: 2s ease-in-out; */
+}
+
+.square {
+  background-image: url('https://i.insider.com/6203e681388eba001866e21f?width=100');
+  background-repeat: no-repeat;
+}
+
+.animated {
+  animation-name: moveRight;
+  animation-duration: 10s;
+}
+
+@keyframes moveRight {
+  0% {
+    margin-left: 0px;
+  }
+  50% {
+    margin-left: 500px;
+    margin-top: 500px;
+    transform: rotate(0.15turn);
+    opacity: 0;
+  }
+  100% {
+    margin-left: 0px;
+  }
+}

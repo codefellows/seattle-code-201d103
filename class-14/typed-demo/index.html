@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Animations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Animations</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="survey.html">Survey</a>
+        </li>
+        <li>
+          <a href="chart.html">Chart</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="animate-me" class="square">
+    </div>
+  </main>
+  <script>
+    let square = document.getElementById('animate-me');
+
+    square.addEventListener('click', (event) => {
+      // event.target.classList = 'animated';
+      event.target.classList.add('animated');
+      // event.target.style = 'animation-name: moveRight;'
+    });
+  </script>
+</body>
+</html>
